@@ -22,7 +22,7 @@ xfun::pkg_attach(c("sf","maptools","sp","spatstat","tmap"), install = TRUE)
 
 ?st_layers
 
-st_layers("./Data/Ex2_data.gdb")
+st_layers("./Ex2_data.gdb")
 
 # The GDB file contain 3 files:
 # northernMIPFO a Multi Polygon: this is our study area (A) 
@@ -34,14 +34,14 @@ st_layers("./Data/Ex2_data.gdb")
 # For this exercise/lab, we are going to maintain the projection as it is
 
 
-SA_preview <- st_read("./Data/Ex2_data.gdb", 
+SA_preview <- st_read("./Ex2_data.gdb", 
                       layer = "northernMIPFO_original" )
 
-studyarea <-st_read("./Data/Ex2_data.gdb", 
+studyarea <-st_read("./Ex2_data.gdb", 
                     layer = "northernMIPFO")
 
 
-WF_2016 <- st_read("./Data/Ex2_data.gdb",
+WF_2016 <- st_read("./Ex2_data.gdb",
                     layer = "northmiPFO5km_wf2016")
 
 
